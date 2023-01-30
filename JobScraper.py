@@ -1,6 +1,8 @@
 #Script pour extraire les emplois correspondants à nos préférences 
 #du site du Cégep et qui nous envoie le résultat par email
-
+#
+# Modification inutile pour l'exercice.
+#
 #Importer les modules nécessaires pour faire du Web Scraping
 import requests
 from bs4 import BeautifulSoup
