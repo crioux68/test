@@ -27,6 +27,8 @@ def main():
     Page = requests.get(URL)
     Resultats = BeautifulSoup(Page.content, "html.parser")
 
+    yeeeerrrrr = false
+
     #Examiner le contenu pour identifier les éléments qui nous pointent vers les informations
     #Dans le cas présent, une é.tude de la page nous a donné que la balise <DIV> a une classe "card-content" qui identifie les emplois
     Job_elements = Resultats.find_all("div", class_="card-content")
