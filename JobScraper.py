@@ -5,23 +5,18 @@
 #
 #Importer les modules nécessaires pour faire du Web Scraping
 #
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 #Bonjour je m'appelle Félix
 #Bonjour je suis Matthew P-J O
-=======
 #Bonjour je m'appelle Félix. Moi aussi!!
->>>>>>> 7f7c913f2d0046fff11fde490e0c48f0ddd057e9
-=======
+
 #Bonjour je m'appelle Frédéric. Moi aussi!!
-<<<<<<< HEAD
+
 # Une autre nouvelle ligne! 1-2-3-4 !!
 #Mouahahahahah, l'empereur de kahoot vous salut
-=======
+
 # Une autre nouvelle ligne! 1-2 !!
 
->>>>>>> 0df57c388c0a0797cfbe7b8f8a0ff3997b953bfd
->>>>>>> 2f23247e0423ef71febd649603de17f419a38ee9
 import requests
 from bs4 import BeautifulSoup
 #pour le email
