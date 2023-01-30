@@ -6,6 +6,7 @@
 #Importer les modules nécessaires pour faire du Web Scraping
 #
 #Bonjour je m'appelle Félix
+#Bonjour je suis Matthew P-J
 import requests
 from bs4 import BeautifulSoup
 #pour le email
