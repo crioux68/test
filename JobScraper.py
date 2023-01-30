@@ -114,6 +114,7 @@ def main():
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, msg.as_string())
 
+#Ceci est un commentaire douteux d'un padawan de la programmation.
 #Reset
 if __name__ == "__main__":
     main()
