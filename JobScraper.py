@@ -5,12 +5,16 @@
 #
 #Importer les modules nécessaires pour faire du Web Scraping
 #
-#<<<<<<< HEAD
+
 #Bonjour je m'appelle Félix
 #Bonjour je suis Matthew P-J O
+
+#Bonjour je m'appelle Félix. Moi aussi!!
+
 #Bonjour je m'appelle Frédéric. Moi aussi!!
 # Une autre nouvelle ligne! 1-2-3-4 !!
 #Mouahahahahah, l'empereur de kahoot vous salut
+
 import requests
 from bs4 import BeautifulSoup
 #pour le email
@@ -49,6 +53,10 @@ def main():
     Resultats = BeautifulSoup(Page.content, "html.parser")
 
     yeeeerrrrr = False
+
+    if not yeeeerrrrr:
+        yeeeerrrrr = True
+    
 
     #Examiner le contenu pour identifier les éléments qui nous pointent vers les informations
     #Dans le cas présent, une é.tude de la page nous a donné que la balise <DIV> a une classe "card-content" qui identifie les emplois
