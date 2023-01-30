@@ -7,10 +7,11 @@
 #
 #<<<<<<< HEAD
 #Bonjour je m'appelle Félix
-#Bonjour je suis Matthew P-J O
+#Bonjour je suis Matthew P-J. Non, tu ne l'es pas.
 #Bonjour je m'appelle Frédéric. Moi aussi!!
 # Une autre nouvelle ligne! 1-2-3-4 !!
-#Mouahahahahah, l'empereur de kahoot vous salut
+#Mouahahahahah, l'empereur de kahoot vous salut. Je t'ai déjà battu, empereur déchu!
+
 import requests
 from bs4 import BeautifulSoup
 #pour le email
