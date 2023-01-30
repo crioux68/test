@@ -113,7 +113,7 @@ def main():
     #password = "pupfcpqeowakqyy" #Mot de passe "application" généré par Google
 
     msg = EmailMessage()
-    msg['Subject'] = "Emplois CegepGIM"
+    msg['Subject'] = "Emplois CegepGIM 2023"
     msg['From'] = sender_email
     msg['To'] = receiver_email
 
