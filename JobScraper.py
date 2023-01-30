@@ -4,6 +4,10 @@
 # Modification inutile pour l'exercice.
 #
 #Importer les modules nécessaires pour faire du Web Scraping
+#
+#Bonjour je m'appelle Frédéric. Moi aussi!!
+# Une autre nouvelle ligne! 1-2-3-4 !!
+
 import requests
 from bs4 import BeautifulSoup
 #pour le email
