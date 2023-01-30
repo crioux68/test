@@ -5,8 +5,12 @@
 #
 #Importer les modules nécessaires pour faire du Web Scraping
 #
+<<<<<<< HEAD
 #Bonjour je m'appelle Félix
 #Bonjour je suis Matthew P-J
+=======
+#Bonjour je m'appelle Félix. Moi aussi!!
+>>>>>>> 7f7c913f2d0046fff11fde490e0c48f0ddd057e9
 import requests
 from bs4 import BeautifulSoup
 #pour le email
