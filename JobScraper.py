@@ -1,19 +1,8 @@
 #Script pour extraire les emplois correspondants à nos préférences 
 #du site du Cégep et qui nous envoie le résultat par email
 #
-# Modification inutile pour l'exercice.
-#
 #Importer les modules nécessaires pour faire du Web Scraping
 #
-
-#Bonjour je m'appelle Félix
-#Bonjour je suis Matthew P-J O
-
-#Bonjour je m'appelle Félix. Moi aussi!!
-
-#Bonjour je m'appelle Frédéric. Moi aussi!!
-# Une autre nouvelle ligne! 1-2-3-4 !!
-#Mouahahahahah, l'empereur de kahoot vous salut
 
 import requests
 from bs4 import BeautifulSoup
@@ -28,35 +17,12 @@ URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
 
-  
-#⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⡟⠁⠄⠄⠄⠄⣠⣤⣴⣶⣶⣶⣶⣤⡀⠈⠙⢿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠄⠈⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⠁⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄⢺⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⡄⠄⠄⠄⠙⠻⠿⣿⣿⣿⣿⠿⠿⠛⠛⠻⣿⡄⠄⣾⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⡇⠄⠄⠁ 👁 ⠄⢹⣿⡗⠄ 👁 ⢄⡀⣾⢀⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⡇⠘⠄⠄⠄⢀⡀⠄⣿⣿⣷⣤⣤⣾⣿⣿⣿⣧⢸⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⡇⠄⣰⣿⡿⠟⠃⠄⣿⣿⣿⣿⣿⡛⠿⢿⣿⣷⣾⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⡄⠈⠁⠄⠄⠄⠄⠻⠿⢛⣿⣿⠿⠂⠄⢹⢹⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⡐⠐⠄⠄⣠⣀⣀⣚⣯⣵⣶⠆⣰⠄⠞⣾⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣷⡄⠄⠄⠈⠛⠿⠿⠿⣻⡏⢠⣿⣎⣾⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⡿⠟⠛⠄⠄⠄⠄⠙⣛⣿⣿⣵⣿⡿⢹⡟⣿⣿⣿⣿⣿⣿⣿
-#⣿⠿⠿⠋⠉⠄⠄⠄⠄⠄⠄⠄⣀⣠⣾⣿⣿⣿⡟⠁⠹⡇⣸⣿⣿⣿⣿⣿⣿
-#⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⠿⠿⠛⠋⠄⣸⣦⣠⣿⣿⣿⣿⣿⣿⣿
-
-Jerma
-    
 def main(): 
     ###### Main ######
     #extraire le contenu de la page
     Page = requests.get(URL)
     Resultats = BeautifulSoup(Page.content, "html.parser")
-
-    yeeeerrrrr = False
-
-    if not yeeeerrrrr:
-        yeeeerrrrr = True
-    
+ 
 
     #Examiner le contenu pour identifier les éléments qui nous pointent vers les informations
     #Dans le cas présent, une é.tude de la page nous a donné que la balise <DIV> a une classe "card-content" qui identifie les emplois
