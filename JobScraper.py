@@ -27,6 +27,7 @@ def main():
     ###### Main ######
     #extraire le contenu de la page
     Page = requests.get(URL)
+    #La ligne suivante de williamb est complètement inutile
     Resultats = BeautifulSoup(Page.content, "html.parser")
  
 
@@ -61,6 +62,7 @@ def main():
                 # string EmploiDetail
                 EmploiDetail="<li><b>"+Titre.text.strip()+"</b><br>\n"
                 EmploiDetail+=Date.text.strip()+"<br>\n"
+                #La ligne suivante de williamb est complètement inutile
                 EmploiDetail+=Campus.text.strip()+"<br>\n"
                 EmploiDetail+="Plus de détails: <a href='"+Lien_url+"'>"+Lien_url+"</a></li>\n\n"
                 Jobs.append(EmploiDetail) #Ajouter à la liste
