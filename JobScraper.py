@@ -22,7 +22,10 @@ URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
 #Borel borel borel borel borel borel borel borel borel bonjour
-x = 2 + 2
+x = 15
+#compte  jusquà x+10
+for i in range(x, x+10):
+    print(i)
 print(x)
 def main(): 
     print("Tardigrade")
