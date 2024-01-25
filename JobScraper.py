@@ -15,6 +15,8 @@ from email.message import EmailMessage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+print("texte")
+
 #définir le site qu'on va examiner
 URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
@@ -31,6 +33,8 @@ def main():
     #extraire le contenu de la page
     Page = requests.get(URL)
     Resultats = BeautifulSoup(Page.content, "html.parser")
+
+    print("Hello World")
  
 
     #Examiner le contenu pour identifier les éléments qui nous pointent vers les informations
@@ -70,6 +74,7 @@ def main():
             
     Jobs.append("\n</ul>")  #Fermer la balise UserList
 
+    print(Jobs)
     #Envoyer le résultat par GMAIL
     #Avec GMAIL, depuis peu, il est beaucoup plus complexe d'envoyer des emails avec un script
     #Ils ont sécurisé grandement leurs API.  #La façon la MOINS COMPLIQUÉE est d'activer le 2 Steps authentication 
@@ -109,6 +114,7 @@ def main():
     message = MIMEText(ContenuHTML, 'html')
     msg.attach(message)
     msg['Subject'] = "Emplois CegepGIM"
+    print(msg)
 
     # Je sais pas trop à quoi cela sert :/
     context = ssl.create_default_context()
