@@ -18,6 +18,7 @@ URL = "https://cegepgim.ca/offres-emploi/"
 Filtre = ["éolienne","foresterie","infirmier","test"]
 #Borel borel borel borel borel borel borel borel borel bonjour
 def main(): 
+    print("Tardigrade")
     ###### Main ######
     #extraire le contenu de la page
     Page = requests.get(URL)
