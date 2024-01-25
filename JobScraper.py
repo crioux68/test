@@ -4,6 +4,9 @@
 #Importer les modules nécessaires pour faire du Web Scraping
 #
 
+#conflit?
+
+
 import requests
 from bs4 import BeautifulSoup
 #pour le email
