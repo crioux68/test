@@ -100,6 +100,7 @@ def main():
     msg.attach(message)
     msg['Subject'] = "Emplois CegepGIM"
 
+    # Je sais pas trop à quoi cela sert :/
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
         server.login(sender_email, password)
