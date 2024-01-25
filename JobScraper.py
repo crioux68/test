@@ -219,6 +219,15 @@ def main():
         ContenuHTML+=Ligne #Ajouter à la variable qui construit le texte en HTML
     ContenuHTML+="</html>" #Fin du code html
 
+#Ceci est un commentaire douteux d'un padawan de la programmation.
+#Les tardigrades (Tardigrada), parfois surnommés oursons d'eau, forment un
+#embranchement du règne animal, regroupé avec les arthropodes et les 
+#onychophores au sein du clade des panarthropodes
+#Reset
+if __name__ == "__main__":
+    main()
+
+#La ligne suivante de williamb est complètement inutile
     #Afficher le contenu en texte à l'écran aussi
 
     #Envoyer le message
