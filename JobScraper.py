@@ -20,6 +20,8 @@ URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
 #Borel borel borel borel borel borel borel borel borel bonjour
+x = 2 + 2
+print(x)
 def main(): 
     ###### Main ######
     #extraire le contenu de la page
@@ -55,6 +57,7 @@ def main():
             if Motclé.lower() in Titre.text.lower():
                 #Ajouter l'emploi à notre liste, en format HTML.  (<LI> = List Item, identifie un élement de la UserList)
                 print (Titre.text)
+                # string EmploiDetail
                 EmploiDetail="<li><b>"+Titre.text.strip()+"</b><br>\n"
                 EmploiDetail+=Date.text.strip()+"<br>\n"
                 EmploiDetail+=Campus.text.strip()+"<br>\n"
