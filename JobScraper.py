@@ -30,7 +30,7 @@ x = 15
 #compte  jusquà x+10
 for i in range(x, x+10):
     print(i)
-print(x)
+print(x + 10)
 def main(): 
     print("étagère")
     ###### Main ######
