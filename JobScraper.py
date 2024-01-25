@@ -1,10 +1,10 @@
-#Script pour extraire les emplois correspondants à nos préférences 
-#du site du Cégep et qui nous envoie le résultat par email
+#Script pour extraire les emplois efsafsdafasdfasdfsd df sdfsa asfsdafcorrespondants à nos préférences 
+#du site du Cégep et qui nous envoie le résultds sd sdaf sd fsdat par email
 #
-#Importer les modules nécessaires pour faire du Web Scraping
+#Importer les modules nécessaires pour faire du Wf sd sd sadfsdfsfseb Scraping
 #
 
-#conflit?
+#conflit?sdfs s df 
 
 
 import requests
@@ -14,6 +14,8 @@ import smtplib, ssl
 from email.message import EmailMessage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
+print("texte")
 
 #définir le site qu'on va examiner
 URL = "https://cegepgim.ca/offres-emploi/"
@@ -31,6 +33,8 @@ def main():
     #extraire le contenu de la page
     Page = requests.get(URL)
     Resultats = BeautifulSoup(Page.content, "html.parser")
+
+    print("Hello World")
  
 
     #Examiner le contenu pour identifier les éléments qui nous pointent vers les informations
@@ -70,6 +74,7 @@ def main():
             
     Jobs.append("\n</ul>")  #Fermer la balise UserList
 
+    print(Jobs)
     #Envoyer le résultat par GMAIL
     #Avec GMAIL, depuis peu, il est beaucoup plus complexe d'envoyer des emails avec un script
     #Ils ont sécurisé grandement leurs API.  #La façon la MOINS COMPLIQUÉE est d'activer le 2 Steps authentication 
@@ -109,6 +114,7 @@ def main():
     message = MIMEText(ContenuHTML, 'html')
     msg.attach(message)
     msg['Subject'] = "Emplois CegepGIM"
+    print(msg)
 
     # Je sais pas trop à quoi cela sert :/
     context = ssl.create_default_context()
