@@ -26,7 +26,7 @@ for i in range(x, x+10):
     print(i)
 print(x)
 def main(): 
-    print("Tardigrade")
+    print("étagère")
     ###### Main ######
     #extraire le contenu de la page
     Page = requests.get(URL)
