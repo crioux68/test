@@ -106,6 +106,9 @@ def main():
         server.sendmail(sender_email, receiver_email, msg.as_string())
 
 #Ceci est un commentaire douteux d'un padawan de la programmation.
+#Les tardigrades (Tardigrada), parfois surnommés oursons d'eau, forment un
+#embranchement du règne animal, regroupé avec les arthropodes et les 
+#onychophores au sein du clade des panarthropodes
 #Reset
 if __name__ == "__main__":
     main()
