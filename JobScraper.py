@@ -17,6 +17,8 @@ URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
 #Borel borel borel borel borel borel borel borel borel bonjour
+x = 2 + 2
+print(x)
 def main(): 
     ###### Main ######
     #extraire le contenu de la page
