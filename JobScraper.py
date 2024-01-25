@@ -4,6 +4,9 @@
 #Importer les modules nécessaires pour faire du Web Scraping
 #
 
+#conflit?
+
+
 import requests
 from bs4 import BeautifulSoup
 #pour le email
@@ -16,7 +19,9 @@ from email.mime.text import MIMEText
 URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
-
+#Borel borel borel borel borel borel borel borel borel bonjour
+x = 2 + 2
+print(x)
 def main(): 
     ###### Main ######
     #extraire le contenu de la page
@@ -52,6 +57,7 @@ def main():
             if Motclé.lower() in Titre.text.lower():
                 #Ajouter l'emploi à notre liste, en format HTML.  (<LI> = List Item, identifie un élement de la UserList)
                 print (Titre.text)
+                # string EmploiDetail
                 EmploiDetail="<li><b>"+Titre.text.strip()+"</b><br>\n"
                 EmploiDetail+=Date.text.strip()+"<br>\n"
                 EmploiDetail+=Campus.text.strip()+"<br>\n"
@@ -100,6 +106,7 @@ def main():
     msg.attach(message)
     msg['Subject'] = "Emplois CegepGIM"
 
+    # Je sais pas trop à quoi cela sert :/
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
         server.login(sender_email, password)
