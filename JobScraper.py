@@ -52,6 +52,7 @@ def main():
             if Motclé.lower() in Titre.text.lower():
                 #Ajouter l'emploi à notre liste, en format HTML.  (<LI> = List Item, identifie un élement de la UserList)
                 print (Titre.text)
+                # string EmploiDetail
                 EmploiDetail="<li><b>"+Titre.text.strip()+"</b><br>\n"
                 EmploiDetail+=Date.text.strip()+"<br>\n"
                 EmploiDetail+=Campus.text.strip()+"<br>\n"
