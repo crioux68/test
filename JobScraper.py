@@ -1,10 +1,10 @@
-#Script pour extraire les emplois correspondants à nos préférences 
-#du site du Cégep et qui nous envoie le résultat par email
+#Script pour extraire les emplois efsafsdafasdfasdfsd df sdfsa asfsdafcorrespondants à nos préférences 
+#du site du Cégep et qui nous envoie le résultds sd sdaf sd fsdat par email
 #
-#Importer les modules nécessaires pour faire du Web Scraping
+#Importer les modules nécessaires pour faire du Wf sd sd sadfsdfsfseb Scraping
 #
 
-#conflit?
+#conflit?sdfs s df 
 
 
 import requests
