@@ -147,9 +147,6 @@ def main():
         display_surface.blit(text, (x_start, y_start))
 
     # def text_display(letter, x_start, y_start):
-    #wjdwoqdqwdo-¸jqwd¸wQODJJODOPJQWDOPJWQJPODOPJQOIJWD
-    #¸jqwd¸wQODJJODOPJQWDOPJWQJPODOPJQOIJWD
-    #WNDQPNDKNQDPNQNDPPNWDPWND
     #     text = font.render(str(letter), True, white)
     #     display_surface.blit(text, (x_start, y_start))
 
