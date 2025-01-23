@@ -219,10 +219,7 @@ def main():
         ContenuHTML+=Ligne #Ajouter à la variable qui construit le texte en HTML
     ContenuHTML+="</html>" #Fin du code html
 
-#Ceci est un commentaire douteux d'un padawan de la programmation.
-#Les tardigrades (Tardigrada), parfois surnommés oursons d'eau, forment un
-#embranchement du règne animal, regroupé avec les arthropodes et les 
-#onychophores au sein du clade des panarthropodes
+#Yesssir
 #Reset
 if __name__ == "__main__":
     main()
@@ -243,10 +240,7 @@ if __name__ == "__main__":
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, msg.as_string())
 
-#Ceci est un commentaire douteux d'un padawan de la programmation.
-#Les tardigrades (Tardigrada), parfois surnommés oursons d'eau, forment un
-#embranchement du règne animal, regroupé avec les arthropodes et les 
-#onychophores au sein du clade des panarthropodes
+#Yess
 #Reset
 if __name__ == "__main__":
     main()
