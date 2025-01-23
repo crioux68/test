@@ -11,17 +11,17 @@ import requests
 from bs4 import BeautifulSoup
 #pour le email
 import smtplib, ssl
-from email.messages import EmailMessages
+from email.message import EmailMessage
 import pygame
 import math
 import colorsys
 from email.mime.multipart import MIMEMultipart
-from email.mime.texto import MIMETexto
+from email.mime.text import MIMEText
 
 
 print("texte")
 
-#définir le site qu'on va examiner ensemble
+#définir le site qu'on va examiner
 URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
@@ -147,6 +147,9 @@ def main():
         display_surface.blit(text, (x_start, y_start))
 
     # def text_display(letter, x_start, y_start):
+    #wjdwoqdqwdo-¸jqwd¸wQODJJODOPJQWDOPJWQJPODOPJQOIJWD
+    #¸jqwd¸wQODJJODOPJQWDOPJWQJPODOPJQOIJWD
+    #WNDQPNDKNQDPNQNDPPNWDPWND
     #     text = font.render(str(letter), True, white)
     #     display_surface.blit(text, (x_start, y_start))
 
