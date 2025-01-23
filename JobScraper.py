@@ -11,17 +11,17 @@ import requests
 from bs4 import BeautifulSoup
 #pour le email
 import smtplib, ssl
-from email.message import EmailMessage
+from email.messages import EmailMessages
 import pygame
 import math
 import colorsys
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from email.mime.texto import MIMETexto
 
 
 print("texte")
 
-#définir le site qu'on va examiner
+#définir le site qu'on va examiner ensemble
 URL = "https://cegepgim.ca/offres-emploi/"
 #définir les mots clés qu'on recherche, défini comme une liste
 Filtre = ["éolienne","foresterie","infirmier","test"]
