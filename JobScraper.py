@@ -11,12 +11,12 @@ import requests
 from bs4 import BeautifulSoup
 #pour le email
 import smtplib, ssl
-from email.message import EmailMessage
+from email.messages import EmailMessages
 import pygame
 import math
 import colorsys
 from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
+from email.mime.texto import MIMETexto
 
 
 print("texte")
